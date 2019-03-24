@@ -19,6 +19,10 @@ public abstract class SmallDAdapter<T> {
     smalld.onGatewayPayload(this::notifyPayload);
   }
 
+  protected SmallD getSmallD() {
+    return smalld;
+  }
+
   protected abstract String from(T payload);
 
   protected abstract T to(String str);
