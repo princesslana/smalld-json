@@ -20,9 +20,7 @@ public class PingBotJsonIter {
 
   private void onMessageCreate(Any json) {
     if (json.toString("content").equals("++ping")) {
-
       String channelId = json.toString("channel_id");
-
       smalld.post("/channels/" + channelId + "/messages", Message.of("pong"), Void.class);
     }
   }
