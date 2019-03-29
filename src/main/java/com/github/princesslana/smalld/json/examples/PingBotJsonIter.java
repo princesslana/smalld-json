@@ -1,8 +1,9 @@
 package com.github.princesslana.smalld.json.examples;
 
-import com.jsoniter.any.Any;
 import com.github.princesslana.smalld.json.SmallDJsonIter;
+import com.jsoniter.any.Any;
 
+/** Ping bot that uses {@link SmallDJsonIter}. */
 public class PingBotJsonIter {
 
   private final SmallDJsonIter smalld;
@@ -34,6 +35,7 @@ public class PingBotJsonIter {
     SmallDJsonIter.run(System.getenv("SMALLD_TOKEN"), PingBotJsonIter::new);
   }
 
+  /** A data structure representing a Discord message. */
   private static class Message {
     private String content;
 

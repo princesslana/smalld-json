@@ -3,6 +3,7 @@ package com.github.princesslana.smalld.json.examples;
 import com.github.princesslana.smalld.json.SmallDGson;
 import com.google.gson.annotations.SerializedName;
 
+/** Bot that responds to {@code ++ping} with {@code pong} using {@link SmallDGson}. */
 public class PingBotGson {
 
   private final SmallDGson smalld;
@@ -30,6 +31,7 @@ public class PingBotGson {
     SmallDGson.run(System.getenv("SMALLD_TOKEN"), PingBotGson::new);
   }
 
+  /** Represents a Discord Create Message event. */
   private static class CreateMessage {
     private String t;
     private Message d;
@@ -47,6 +49,7 @@ public class PingBotGson {
     }
   }
 
+  /** Respresents a Discord message. */
   private static class Message {
     @SerializedName("channel_id")
     private String channelId;

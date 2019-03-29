@@ -3,6 +3,7 @@ package com.github.princesslana.smalld.json.examples;
 import com.eclipsesource.json.Json;
 import com.github.princesslana.smalld.json.SmallDMinimalJson;
 
+/** Sample ping bot that uses {@link SmallDMinimalJson}. */
 public class PingBotMinimalJson {
 
   /**
